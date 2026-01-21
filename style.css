@@ -1,3 +1,37 @@
-h1 {
-  color: blueviolet;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+margin:0;
+box-sizing: border-box;
+padding:0 ;
+
+
+}
+
+
+
+body{ margin-left: 10px;
+background-color: #f4f0ea;
+color: #798252;
+font-family: 'Montserrat', 'Arial', 'sans-serif';
+font-weight: 400; 
+
+}
+
+header{
+  margin-left: -10px;
+  border: 20px solid;
+  border-color: #2a9d6b;
+padding: 2rem;
+
+}
+
+main {
+padding: 1rem;
+
+
+
+
 }
