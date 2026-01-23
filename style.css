@@ -64,25 +64,28 @@ main {display: flex;
 
 
 
-input[type="radio"]{
-  
-padding: 0.3pc;
-width: 1px;
+input[type="radio"]{ 
+padding: 3px;
+
 border:  2.5px solid blue;
 background-color: transparent;
 border-radius: 20px;
+box-sizing: border-box;
+content: "  " ; 
 appearance: none;
 }
-/*jeitar eesa marcação*/
+
 input[type="radio"]:checked {
-padding: 0.3pc;
-width: 1px;
+
+padding:  3px;
+background-clip: content-box ;
+
   border:  2.5px solid blue;
-  border-radius: 8px; 
-background-color: blue; /* Cor de fundo quando selecionado */
+  border-radius: 20px; 
+  
+background-color: blue; }  
 
-}
-
+ 
 input[type="text"] {
 border: 2px solid #CDD595;
 padding: 0.5rem;
