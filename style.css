@@ -67,40 +67,64 @@ main {display: flex;
 input[type="radio"]{ 
 padding: 5px;
 
-border:  2.5px solid blue;
+border:  2.5px solid rgb(63, 207, 63);
 background-color: transparent;
 border-radius: 50%;
 box-sizing: border-box; 
 cursor:pointer;
+
 appearance: none;
-}
-input[type="radio"]:checked{
-  content: ' ';
-   text-align :center; 
-  
-  transition-duration: 1s;
-/* length: 1.5px;
-   width: 1.5px;
-  height:1.5px;  */
-/* aprender o resto, um passo de cada vez */
 
-  box-shadow: inset 5px -5px 0px -3px blue ;
-  
 
+}input[type="radio"]:checked{
+  
+box-shadow: inset 0 0 0 2.5px #45db9a;
+  transition-duration: 0.5s;
 }
 
 
 
-input[type="text"] {
+ input[id="p2"]{
+
 border: 2px solid #CDD595;
 padding: 0.5rem;
 width: 100%;
 margin-left: 0;
+
 outline: none;
 border-radius: 8px;
 background-color:transparent;
+ }
+ input::placeholder{
+ font-family: 'cabin', 'Arial', 'sans-serif';
+  background-color: none;
+ }
 
-}
+ input[type="checkbox"]{
+ 
+cursor:pointer;
+appearance: none;
+border: 2.5px solid rgb(63, 207, 63);
+background-color: transparent;
+padding: 4px;
+ 
+ }
+ 
+ input[type="checkbox"]:checked{
+ appearance: auto;
+  accent-color: #45db9a;
+  transition-duration: 0.5s;
+ }
+
+ select{
+ border: 2px solid #CDD595;
+width:100%;
+padding: 0.5rem;
+background-color: transparent;
+border-radius: 8px;
+outline: none;
+  
+ }
 
 section {
 
