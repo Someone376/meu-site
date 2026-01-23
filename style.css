@@ -65,27 +65,32 @@ main {display: flex;
 
 
 input[type="radio"]{ 
-padding: 3px;
+padding: 5px;
 
 border:  2.5px solid blue;
 background-color: transparent;
-border-radius: 20px;
-box-sizing: border-box;
-content: "normal"; 
+border-radius: 50%;
+box-sizing: border-box; 
+cursor:pointer;
 appearance: none;
 }
-
-input[type="radio"]:checked {
-
-padding:  3px;
-background-clip: content-box ;
-
-  border:  2.5px solid blue;
-  border-radius: 20px; 
+input[type="radio"]:checked{
+  content: ' ';
+   text-align :center; 
   
-background-color: blue; }  
+  transition-duration: 1s;
+/* length: 1.5px;
+   width: 1.5px;
+  height:1.5px;  */
+/* aprender o resto, um passo de cada vez */
 
- 
+  box-shadow: inset 5px -5px 0px -3px blue ;
+  
+
+}
+
+
+
 input[type="text"] {
 border: 2px solid #CDD595;
 padding: 0.5rem;
