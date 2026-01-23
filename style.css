@@ -71,7 +71,7 @@ border:  2.5px solid blue;
 background-color: transparent;
 border-radius: 20px;
 box-sizing: border-box;
-content: "  " ; 
+content: "normal"; 
 appearance: none;
 }
 
