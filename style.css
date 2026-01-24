@@ -16,7 +16,8 @@ padding:0 ;
 
 
 body{ 
-
+border: 2px solid #f4f0ea;
+border-collapse: separate;
 background-color: #f4f0ea;
 color: #798252;
 font-family: 'Montserrat', 'Arial', 'sans-serif';
@@ -116,6 +117,7 @@ padding: 4px;
  
  input[type="checkbox"]:checked{
  appearance: auto;
+ 
   accent-color: #45db9a;
   transition-duration: 0.5s;
  }
@@ -156,7 +158,7 @@ img {
 
  
 table{
-length: 100%;
+/* length: 100%; */
 width:100%; 
 display: table-column;
 border-collapse: collapse;
@@ -175,7 +177,7 @@ background-color: #CDD595;
 }
 
 summary{
-padding: 1rem;
+padding: 0.5rem;
 margin: 1rem;
 background-clip: padding-box;
 background-color: #CDD595 ;
@@ -187,10 +189,9 @@ details li {
 padding: 1rem;
 margin: 1rem;
 background-clip: margin-box;
-background-color: #CDD595 ;
-
 
 }
+details{background-color: #CDD595 ;}
 
 
 
@@ -207,11 +208,13 @@ background-color: #EDE8D0 ;
 
 }
 
-fieldset{
- margin: 1.5rem;
-padding: 1.5rem;
-}
 
+fieldset{
+  display:flex;
+  flex-direction: column;
+border: 1.5px solid #CDD595;
+
+}
 fieldset input{
 background-color: transparent;
 width: 70%;
@@ -223,7 +226,28 @@ border-radius: 8px;
 
 border: 2px solid #CDD595;
 }
+fieldset input label{
 
+font-size: 15px;
+
+
+}
+fieldset input::placeholder, fieldset::placeholder{
+ font-family: 'cabin', 'Arial', 'sans-serif';
+  background-color: none;}
+
+  fieldset textarea{
+ background-color:transparent;
+
+font-size: 14.72px;
+outline: none;
+border: 2px solid #CDD595;
+
+ width: 50%;
+ height: 50%;
+
+
+  }
 
 .f{
 
@@ -231,7 +255,11 @@ text-align:center
 
 }
  
+footer{
+background-color: white;
 
+
+}
 
 
 
