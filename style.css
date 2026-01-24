@@ -84,7 +84,8 @@ box-shadow: inset 0 0 0 2.5px #45db9a;
 
 
 
- input[id="p2"]{
+ input[id="p2"], input[name="resposta8"], Select{
+font-size: 14.72px;
 
 border: 2px solid #CDD595;
 padding: 0.5rem;
@@ -95,9 +96,12 @@ outline: none;
 border-radius: 8px;
 background-color:transparent;
  }
- input::placeholder{
+ input[id=p2]::placeholder, input[name="reposta8"]::placeholder{
  font-family: 'cabin', 'Arial', 'sans-serif';
   background-color: none;
+ font-size: 14.72px;
+
+ 
  }
 
  input[type="checkbox"]{
@@ -116,17 +120,18 @@ padding: 4px;
   transition-duration: 0.5s;
  }
 
- select{
- border: 2px solid #CDD595;
-width:100%;
-padding: 0.5rem;
-background-color: transparent;
-border-radius: 8px;
-outline: none;
+option{
+  font-family: 'cabin', 'Arial', 'sans-serif';
+  background-color: #f4f0ea;
+  font-size: 14.72px;
   
- }
-
-section {
+  border: 1.4px solid  #CDD595;
+}
+option::selection{
+opacity: 40%;
+  background-color: darkgreen ;
+}
+ section {
 
 display: flex;
 flex-direction: column;
@@ -148,3 +153,26 @@ img {
   border: 4px solid #3e4f3c;
 
 }
+
+
+table{
+
+width:100%;
+border-collapse: collapse;
+}
+/* thead{
+
+
+
+
+}
+
+tr{
+
+
+} */
+
+
+
+
+
