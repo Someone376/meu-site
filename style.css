@@ -133,8 +133,8 @@ opacity: 40%;
 }
  section {
 
-display: flex;
-flex-direction: column;
+ display: flex;
+flex-direction: column; 
 gap : 0.5rem;
 
 
@@ -154,23 +154,85 @@ img {
 
 }
 
-
+ 
 table{
-
-width:100%;
+length: 100%;
+width:100%; 
+display: table-column;
 border-collapse: collapse;
 }
-/* thead{
 
+th, td{border: 1.5px solid black;
+
+padding: 2rem;}
+
+tr{width:100%}
+th[name="direita"], td[name="direita"]{
+
+background-color: #CDD595;
+
+  
+}
+
+summary{
+padding: 1rem;
+margin: 1rem;
+background-clip: padding-box;
+background-color: #CDD595 ;
+
+
+}
+
+details li {
+padding: 1rem;
+margin: 1rem;
+background-clip: margin-box;
+background-color: #CDD595 ;
+
+
+}
+
+
+
+th[name="esquerda"], td[name="esquerda"]{
+
+background-color:   #d9d752;
+
+  
+}
+tfoot{
+background-color: #EDE8D0 ;
 
 
 
 }
 
-tr{
+fieldset{
+ margin: 1.5rem;
+padding: 1.5rem;
+}
+
+fieldset input{
+background-color: transparent;
+width: 70%;
 
 
-} */
+font-size: 14.72px;
+outline: none;
+border-radius: 8px;
+
+border: 2px solid #CDD595;
+}
+
+
+.f{
+
+text-align:center
+
+}
+ 
+
+
 
 
 
