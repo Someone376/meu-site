@@ -28,6 +28,9 @@ font-weight: 400;
   
 
 }
+ul{
+  margin-left: 1rem;
+}
 
 h2{
 color: #707070;
@@ -104,23 +107,48 @@ background-color:transparent;
 
  
  }
+ .pr{
+
+position:relative;
+
+
+ }
+ 
 
  input[type="checkbox"]{
- 
+ position: absolute;
+
 cursor:pointer;
 appearance: none;
 border: 2.5px solid rgb(63, 207, 63);
 background-color: transparent;
 padding: 4px;
- 
+
+ }
+ .icon{
+  opacity: 100%;
+  pointer-events: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  length: 20px;
+position: absolute; 
+padding: 2px;
+background-clip: padding-box;
+background-image: url(check.png);
+accent-color:#45db9a;
+
  }
  
  input[type="checkbox"]:checked{
- appearance: auto;
- 
-  accent-color: #45db9a;
+
+
   transition-duration: 0.5s;
- }
+
+}
+
+
+ 
 
 option{
   font-family: 'cabin', 'Arial', 'sans-serif';
@@ -260,9 +288,5 @@ background-color: white;
 
 
 }
-
-
-
-
 
 
