@@ -69,21 +69,40 @@ main {display: flex;
 
 
 input[type="radio"]{ 
-padding: 5px;
+padding: 2px;
 
 border:  2.5px solid rgb(63, 207, 63);
 background-color: transparent;
 border-radius: 50%;
 box-sizing: border-box; 
 cursor:pointer;
-
+display:inline-grid; 
+place-items:right;
 appearance: none;
+vertical-align: middle;
+
+}
+
+input[type="radio"]::after{
+
+content: "";
+width: 6px;
+border-radius: 8px;
+height: 6px;
+ background-color: #45db9a; 
+  transform: scale(0); 
 
 
-}input[type="radio"]:checked{
+
+
+}
+
+input[type="radio"]:checked::after{
   
-box-shadow: inset 0 0 0 2.5px #45db9a;
-  transition-duration: 0.5s;
+ transform: scale(1);
+ transition:  0.4s ease-in-out;
+
+
 }
 
 
@@ -107,43 +126,56 @@ background-color:transparent;
 
  
  }
- .pr{
 
-position:relative;
+form {
+display: flex;
+flex-direction:column;
+gap: 0.5px
 
 
- }
- 
-
+}
  input[type="checkbox"]{
- position: absolute;
+ display: inline-grid;
 
+ place-content: center;
 cursor:pointer;
 appearance: none;
 border: 2.5px solid rgb(63, 207, 63);
 background-color: transparent;
-padding: 4px;
-
+padding: 0px;
+vertical-align: middle;
  }
- .icon{
-  opacity: 100%;
-  pointer-events: none;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  length: 20px;
-position: absolute; 
-padding: 2px;
-background-clip: padding-box;
-background-image: url(check.png);
-accent-color:#45db9a;
 
- }
+input[type="checkbox"]::after
+{padding: 0;
  
- input[type="checkbox"]:checked{
+  transform: scale(0);
+  content: "" ;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat ;
+background-size: contain;
+transition: 0.4s ease-in-out;
+  background-image: url("check.png");
+  
 
 
-  transition-duration: 0.5s;
+
+
+
+}
+ 
+ input[type="checkbox"]:checked::after{
+
+
+transform: scale(1);
+
+transition: 0.5s ease-in-out;
+
+}input[type="checkbox"]:checked{
+background-color: #45db9a;
+
+
 
 }
 
