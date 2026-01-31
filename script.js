@@ -1,0 +1,109 @@
+
+const rp1d = document.querySelector("#p1a");
+const rp2d = document.querySelector("#p2");
+const rp3d = document.getElementsByName("Pergunta3c");
+const rp4d = document.querySelector("#rps4");
+const rp5d = document.getElementById("p5");
+const botao =document.getElementById("button");
+const respostasCorretas1 ="Orgulho/Obstinação";
+const respostasCorretas2 ="Amar o Próximo";
+const respostasCorretas4 ="Cobiça";
+const respostasCorretas3 =" Snhos Impuros, Cobiça, Pensamentos Pecaminosos";
+const respostasCorretas5 ="Pensamentos Pecaminosos";
+
+
+let acertos = 0;
+function resposta1(){
+if (rp1d.checked == true){
+
+acertos++;
+
+}
+
+}
+
+function limparTexto(texto){
+
+return texto
+
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+
+
+
+}
+
+function resposta2(){
+
+ let rp2 = rp2d.value; 
+ rp2= limparTexto(rp2);
+
+
+if (rp2== "amar ao próximo"){
+    acertos++;
+
+
+
+
+}
+
+}
+
+
+function resposta3(){
+if (rp3d[0].checked && rp3d[1].checked && rp3d[2].checked == true){
+
+acertos++;
+}
+}
+function resposta4(){
+
+    let resp= rp4d.value;
+
+    if (resp== "Cobiça"){
+
+acertos++;
+
+        }    }
+
+
+      function  resposta5() {
+            let p5r= rp5d.value;
+
+            p5r=limparTexto(p5r);
+            if(p5r== "pensamentos pecaminosos"){
+
+                acertos++;
+
+            }
+            
+
+
+        }
+function resposta(){
+
+resposta2();
+
+resposta1();
+
+resposta3();
+
+resposta4();
+resposta5();
+
+}
+
+
+botao.addEventListener("click", function(){
+
+event.preventDefault();
+resposta();
+localStorage.setItem("pontuação", acertos);
+window.location.href = "indes.html";
+
+
+
+});
+

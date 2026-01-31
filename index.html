@@ -10,8 +10,14 @@
    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./logotipo-site.ico" >
 
+
     </head>
     <body>
+           <script>
+    
+    pagina1()</script>
+ 
+ 
         <header>
     <h1><strong>Listas de Pecados</strong></h1>
     <p><em>Lista de pecados frequentemente cometidos na vida cristã</em></p>
@@ -21,7 +27,7 @@
        <!-- seção 1: Introdução -->
     
 
-            <h2>Introdução</h2>
+            <h2 id="kd">Introdução</h2>
         <p><em><i>Lista de pecados frequentemente cometidos na vida cristã</i></em> são extremamente perigosos.</p>
         <p>Estes pecados podem afastar-nos de Deus e prejudicar nosso crescimento espiritual. É importante estar ciente deles para evitá-los e buscar a santidade.</p>
         <p>Aqui estão alguns dos pecados mais comuns que os cristãos devem estar atentos</p>
@@ -69,10 +75,9 @@
         
         <form>
            <h3><strong>1.</strong> Qual é o pior pecado da lista?</h3>
-          <div class="radio-group" id ="p1ar"> <input type="radio" value="Orgulho/Obstinação" id="p1a" name="Pergunta1">
-            <label  for="p1a">Orgulho/Obstinação</label></div>
-             
-           <div class="radio-group" id="p1br"> <input type="radio" value="Pecado Sexual" id="p1b" name="Pergunta1">
+            <div class="radio-group" id ="p1ar"><input type="radio" value="Orgulho/Obstinação" id="p1a" name="Pergunta1">
+             <label  for="p1a">Orgulho/Obstinação</label></div>
+                        <div class="radio-group" id="p1br"> <input type="radio" value="Pecado Sexual" id="p1b" name="Pergunta1">
             <label for="p1b">Pecado Sexual</label></div>
         
             
@@ -81,7 +86,7 @@
             <br>
         </form>
        </section>
-       <!--seção 5: Quiz: pergunta2 (certiva) -->
+       <!--seção 5: Quiz: pergunta2 (certiva) ---->
        <section>
              <h3><strong>2.</strong> Qual a opção acima não é um pecado?</h3>
             <form>
@@ -101,17 +106,17 @@
 <!-- div com display flex para alinhar todos os filhos do div, (filos div serão: input, os dois label e spans) -->
 
         <form> <div>
-        <input type="checkbox" id="p3a" name="Pergunta3" value="Pensamentos Pecaminosos">
+        <input type="checkbox" id="p3a" name="Pergunta3c" value="Pensamentos Pecaminosos">
              <label for="p3a">Pensamentos Pecaminosos</label></div>
        
             <div>
-          <input type="checkbox" id="p3b" name="Pergunta3" value="Sonhos Impuros">
+          <input type="checkbox" id="p3b" name="Pergunta3c" value="Sonhos Impuros">
           <label for="p3b">Sonhos Impuros</label></div>
          <div>
           <input type="checkbox" id="p3c" name="Pergunta3" value="Fofoca"> 
          <label for="p3c">Fofoca</label></div>
         <div>
-        <input type="checkbox" id="p3d" name="Pergunta3" value="Cobiça">
+        <input type="checkbox" id="p3d" name="Pergunta3c" value="Cobiça">
           <label for ="p3d">Cobiça</label></div>
        
 
@@ -122,9 +127,9 @@
        <section>
         <h3><strong>4.</strong> Qual é o nome do pecado em que há um desejo por algo não é seu?</h3>
          <form>
-            <select name="Pergunta4" id="p7">
+            <select id= "rps4" name="Pergunta4" id="p7">
                 <option value="Orgulho">Orgulho</option>
-                <option value="Cobiça">Cobiça</option>
+                <option  value="Cobiça">Cobiça</option>
                 <option value="Fofoca">Fofoca</option>
                 <option value="Obstinação">Obstinação</option>
             </select>
@@ -137,65 +142,30 @@
          <figure> <img src="https://tse4.mm.bing.net/th/id/OIP.S2l3Ukv3oEbLzjuHr7mnLQHaHa?pid=Api&P=0&h=180" alt="Imagem ilustrativa sobre pecados">
             <figcaption><em>Figura 1: Imagem ilustrativa sobre pecados</em></figcaption>
             <form> <br>
-            <input type="text" placeholder="digite aqui" name="resposta8" > </figure>
+            <input type="text" placeholder="digite aqui" name="resposta8"  id= "p5"> </figure>
         </figure>
          
+
+            
+
          </section>
-          <!---seção 9: Tabela de pontuação-->
+
          <section>
-         <h2><em>Tabela de Pontuação do Quiz</em></h2>
-         <table>
-                <thead>
-                    <tr>
-                    <th name="esquerda"><strong>Pontuação</strong></th ><th name ="direita"><em>Avaliação</em></th>
-                    </tr>   
-                
-            </thead>
-            <tbody>
-                <tr>
-                    <td name="esquerda">0-1</td ><td name ="direita">Não desista, aprendendo com erros, evitamos mais falhas</td>
-                </tr>
-                <tr>
-                    <td name="esquerda">2-3</td ><td name="direita">Bom esforço, mas há espaço para melhorias</td>
-                </tr>
-                <tr>    
-                    <td name="esquerda">4-5</td ><td name ="direita">Ótimo trabalho! Você tem um bom conhecimento sobre os pecados</td>
 
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">Continue estudando e buscando a santidade!</td>
-                </tr>
-                </tfoot>
-         </table>
+                <h3> Enviar as resposta</h3>
+                <br>
+
+                <button id="button">
+                    Enviar
+                </button>
+
+
+
          </section>
-         <!---RESPOSTAS-->
-            <section>
-                <h2><em>Respostas do Quiz</em></h2>
-              <details> <summary>Clique para ver as respostas!!!!</summary> <ol>
-                    <li>ORGULHO</li>
-                    <li>amar o próximo</li>
-                    <li>Pensamentos Pecaminosos, Sonhos Impuros, Cobiça</li>
-                    <li>Cobiça</li>
-                    <li>Pensamentos Pecaminosos</li>
-                </ol></details>
-            </section>
-            <section>
-                <h2>Nos dê o seu feedback</h2>
-                 <form><fieldset><legend><h3>Informações de contato</h3></legend>
-                    <label for="name"><em>NOME:</em></label>
-                   <input type="text" name="name"  id="name"><br>
-                      <label for="email"><em>EMAIL:</em></label>
-                   <input type="email" name="email"  id="email"><br>
-                    <label for="comment"><em>COMENTÁRIOS:</em></label>
-                   <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite aqui seus comentários"></textarea>
-                    
-                </fieldset>
-                </form>
-
-
-            </section>
+       
         </main>
+        <br>
+        <br>
         <footer>
             <br>
             <br><br>
@@ -209,6 +179,7 @@
            
                 
         </footer>
+            <script src= "./script.js"></script>
     </body>
 
 </html>

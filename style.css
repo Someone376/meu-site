@@ -104,7 +104,23 @@ input[type="radio"]:checked::after{
 
 
 }
+button {
+    margin-top: 10px;
+box-sizing: border-box;
+width: 20%;
+height: 20%;
+padding: 0.5rem;
+background-color: #CDD595;
+border: 2px solid rgb(63, 207, 63);
+outline: rgb(63, 207, 63);
+font-size: 1rem;
 
+
+border-radius: 8px;
+
+
+
+}
 
 
  input[id="p2"], input[name="resposta8"], Select{
