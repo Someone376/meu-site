@@ -6,7 +6,7 @@
         <title>Respostas Do Quiz</title>
          <link rel="stylesheet" href="./estilo.css">
        <link rel="icon" href="./logotipo-site.ico" >
-
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     </head>
@@ -52,11 +52,11 @@
                 <h2>Nos dê o seu feedback</h2>
                  <form action ="https://formspree.io/f/xpqlaovq" method="POST"><fieldset><legend><h3>Informações de contato</h3></legend>
                    <div> <label for="name"><em>NOME:</em></label>
-                   <input type="text" name="name"  id="name"><br></div>
+                   <input type="text" name="name"  id="name" required><br></div>
                      <div> <label for="email"><em>EMAIL:</em></label>
-                   <input type="email" name="email"  id="email"><br></div>
+                   <input type="email" name="email"  id="email" required><br></div>
                <div>  <div id="s">  <label for="comment"><em>COMENTÁRIOS:</em></label></div>
-                   <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite aqui seus comentários"></textarea></div>
+                   <textarea name="comentarios" id="comentarios" required rows="4" cols="50" placeholder="Digite aqui seus comentários"></textarea></div>
                     <button  onClick="alert('Enviado')">ENVIAR</button>
                 </fieldset>
                 </form>
