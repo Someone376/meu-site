@@ -186,7 +186,7 @@ padding-bottom: 2.5rem;
 width: 50%;
 margin-bottom: 1.5rem;
 height: auto;
-overflow-wrap:break-word ;
+
 box-sizing: border-box;
 background-color:  #CDD595;
 
@@ -200,7 +200,7 @@ margin-bottom: 2.5rem;
 
 }
 #joão{
-  
+  overflow-wrap:break-word ;
 margin-left: 1rem;
 font-size: 2rem;
 
