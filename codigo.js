@@ -1,5 +1,10 @@
 
 const acertos= Number(localStorage.getItem("pontuação"));
+const botao= document.getElementById("enviar");
+const name= document.getElementById("name");
+const email= document.getElementById("email"); 
+
+
 
     if(acertos <=1){
 
@@ -19,4 +24,28 @@ document.getElementById("joão").textContent ="Ótimo trabalho! Você tem um bom
 document.getElementById("sindy").textContent = acertos;
     }
 
+email.addEventListener("focus", function() {
+email.required =false;
+email.setCustomValidity("");
 
+});
+
+name.addEventListener("focus", function() {
+
+// name.required=false;
+name.setCustomValidity("");
+
+});
+
+botao.addEventListener("click", function(){
+ 
+email.required=true;
+if(name.checkValidity() == true && email.checkValidity() == true){
+
+alert("Enviado");
+
+
+}
+
+
+});

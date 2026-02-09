@@ -128,7 +128,7 @@ display: block;
 
 
 }
-fieldset input{
+fieldset input{transition: 1.5s;
 background-color: transparent;
 width: 70%;
 height: 1.5rem;
@@ -193,6 +193,7 @@ background-color:  #CDD595;
 
 }
 #tami *:first-child{
+box-sizing: content-box;
 
 text-align: center;
 margin-right: 1rem;
@@ -200,8 +201,103 @@ margin-bottom: 2.5rem;
 
 }
 #joão{
-  overflow-wrap:break-word ;
+ 
+  margin-right: 0.3rem;
 margin-left: 1rem;
 font-size: 2rem;
 
+
 }
+.liamar input{
+width: 100% !important;
+
+
+}
+label[for="name"], label[for="email"]{
+
+vertical-align: middle;
+
+}
+
+.liamar {
+display:grid;
+
+
+
+}
+
+.span1{
+grid-column: 1/1;
+grid-row: 1/1;
+  padding-top: 4.5px; 
+  padding-left: 1%;
+  opacity: 0%;
+}
+
+.liamar input{
+
+grid-area: 1/1/1/1;
+
+}
+i{margin-left:98%;
+ 
+grid-area: 1/1/1/1;
+  content:"";
+  padding-left: 20px;
+width: 24px;
+height: 24px;
+ background-image: url("error.png");
+
+background-repeat: no-repeat;
+background-size: contain;
+opacity: 0%;
+}
+.liamar input:user-invalid{
+
+border-color: red;
+
+}.liamar input:user-invalid ~ i{opacity: 100% !important;}
+.liamar input:user-invalid +.span1{ 
+color: red;
+opacity: 100%;
+
+
+ pointer-events: none;
+  
+
+}
+.liamar input[type="email"]:user-invalid ~ i{opacity: 100% !important;}
+.liamar input[type="email"]:user-invalid +.span1{ 
+color: red !important;
+opacity: 100% !important;
+
+
+ pointer-events: none;
+  
+
+}
+
+
+
+#enviar{
+
+box-sizing:border-box;
+width:auto;
+height: auto;
+
+
+
+}
+
+@media (max-width: 768px){
+#tami{
+
+
+height: 100%;
+width: 100%;
+
+}
+
+
+}
+
